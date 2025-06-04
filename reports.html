@@ -1,0 +1,148 @@
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+
+<!-- CSS Styles -->
+<link rel="stylesheet" href="styles.css">
+
+<header>
+  <!-- Logo -->
+  <img id="logo-nav" src="cattlelog.png" alt="cattlelog management system logo">
+  <nav>
+  <!-- Links -->
+      <a href="home.html">Home</a>
+      <a href="reports.html">Reports</a>
+      <a href="home.html">Login</a>
+  </nav>
+</header>
+
+<!-- Title -->
+<h1 class="title">Reports</h1>
+
+<!-- Sort & Search (Results will show in both lists separated into either Cows or Calves) -->
+
+<!-- Sort by Year (show data for cows/calves born in that year) -->
+<label for="sort_year">Sort By Year:</label>
+<select id="sort_year" name="sort_year">
+    <option value="all">All Years</option>
+    <option value="2025">2025 (H)</option>
+    <option value="2024">2024 (G)</option>
+    <option value="2023">2023 (F)</option>
+    <option value="2022">2022 (E)</option>
+    <option value="2021">2021 (D)</option>
+    <option value="2020">2020 (C)</option>
+    <option value="2019">2019 (B)</option>
+    <option value="2018">2018 (A)</option>
+    <option value="2017">2017 (X)</option>
+    <option value="2016">2016 (P)</option>
+    <option value="2015">2015 (O)</option>
+    <option value="2014">2014 (N)</option>
+    <option value="2013">2013 (M)</option>
+    <option value="2012">2012 (K)</option>
+    <option value="2011">2011 (J)</option>
+    <option value="2010">2010 (I)</option>
+    <option value="2009">2009 (H)</option>
+</select>
+<button>Go</button>
+
+<br>
+
+<!-- Search by Tag (show all cows or calves with that tag as their current OR previous/lost tag) -->
+<label for="search_tag">Search By Tag:</label>
+<input id="search_tag" type="text">
+<!-- TODO Validate this input by capitalizing any letters, as they are in the db -->
+<button>Go</button>
+
+
+<!-- 2 main components: Cows and Calves Reports -->
+
+<div id="cows-report">
+
+    <p>Cows</p>
+    <button><a href="addcalf.html">+ Add New</a></button>
+
+    <table id="cow-report">
+        <!-- Top row displaying names of fields -->
+        <thead>
+            <tr class="bold">
+                <td>Tag</td>
+                <td>Birth Year</td>
+                <td>Color</td>
+                <td>Previous Calf Tag</td>
+                <td>Notes</td>
+                <td>Edit</td>
+            </tr>
+        </thead>
+
+        <!-- Cows Data -->
+        <tbody>
+            <tr>
+                <td>P1</td>
+                <td>2025</td>
+                <td>Black</td>
+                <td>B10</td>
+                <td class="text_shorten">white around legs</td>
+                <td><button><a href="update.html">➤</a></button></td>
+            </tr>
+
+            <tr>
+                <td>A3</td>
+                <td>2025</td>
+                <td>Red</td>
+                <td>C5</td>
+                <td></td>
+                <td><button><a href="update.html">➤</a></button></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>
+
+
+<div id="calves-report">
+
+    <p>Calves</p>
+    <button><a href="addcalf.html">+ Add New</a></button>
+
+    <table id="calves-report">
+        <!-- Top row displaying names of fields -->
+        <thead>
+            <tr class="bold">
+                <td>Tag</td>
+                <td>Birth Date</td>
+                <td>Sex</td>
+                <td>Color</td>
+                <td>Notes</td>
+                <td>Keep?</td>
+                <td>Edit</td>
+            </tr>
+        </thead>
+
+        <!-- Calves Data -->
+        <tbody>
+            <tr>
+                <td>P1</td>
+                <td>01/10/2025</td>
+                <td>Bull</td>
+                <td>Black</td>
+                <td>small calf</td>
+                <td>✔</td> 
+                <!-- Checkmark: alt key + 0252 -->
+                <td><button><a href="update.html">➤</a></button></td>
+            </tr>
+
+            <tr>
+                <td>A3</td>
+                <td>01/12/2025</td>
+                <td>Heifer</td>
+                <td>Red</td>
+                <td></td>
+                <td></td>
+                <td><button><a href="update.html">➤</a></button></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

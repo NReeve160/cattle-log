@@ -1,0 +1,73 @@
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+
+<!-- CSS Styles -->
+<link rel="stylesheet" href="styles.css">
+
+<header>
+  <!-- Logo -->
+  <img id="logo-nav" src="cattlelog.png" alt="cattlelog management system logo">
+  <nav>
+  <!-- Links -->
+      <a href="home.html">Home</a>
+      <a href="reports.html">Reports</a>
+      <a href="home.html">Login</a>
+  </nav>
+</header>
+
+<!-- Title -->
+<h1 class="title">Update</h1>
+
+<!-- Update / View More Component -->
+
+<div id="update-component">
+
+    <p>Calf</p>
+
+    <form action="reports.html">
+        <!-- Tag -->
+        Tag: <input type="text" value="A3"><br>
+        <!-- Birth Date -->
+        Birth Date: <input type="text" value="01/12/2025"><br>
+        
+        <!-- Calf's Sex -->
+        <label for="calf_sex">Sex:</label>
+        <select id="calf_sex" name="calf_sex">
+            <option value="heifer">Heifer</option>
+            <option value="bull">Bull</option>
+            <option value="unknown">Unknown</option>
+        </select>
+        <br>
+        
+        <!-- Color -->
+        <label for="color">Color:</label>
+        <select id="color" name="color">
+            <option value="black">Black</option>
+            <option value="brown">Brown</option>
+            <option value="bwf">Black White Face</option>
+            <option value="brockle">Brockle</option>
+            <option value="red">Red</option>
+            <option value="gray">Gray</option>
+        </select>
+        <br>
+       
+        <!-- Notes -->
+        Notes: <input type="text" value=""><br>
+        <!-- Keep? -->
+        Keep Calf? <input type="checkbox"><br>
+        <!-- Mother (tag) -->
+        Mother Cow Tag: <input type="text" value="B10"><br>
+        <!-- (optional) Previous Tag -->
+        Previous Tag: <input type="text" value="None"><br>
+
+        <!-- (optional) Vet, shots, sale, death events -->
+        Vet Visits: <input type="text" value="None" readonly><button><a href="reports.html">+ Add New</a></button><br>
+        Shots Given: <input type="text" value="None" readonly><button><a href="reports.html">+ Add New</a></button><br>
+        Sold Calf: <input type="text" value="N/A" readonly><button><a href="reports.html">+ Add New</a></button><br>
+        Calf Died: <input type="text" value="N/A" readonly><button><a href="reports.html">+ Add New</a></button><br>
+
+        <button type="submit">SAVE</button>
+    </form>
+</div>
