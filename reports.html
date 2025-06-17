@@ -24,7 +24,7 @@
 
 <!-- Sort by Year (show data for cows/calves born in that year) -->
 <label for="sort_year">Sort By Year:</label>
-<select id="sort_year" name="sort_year">
+<br><select id="sort_year" name="sort_year">
     <option value="all">All Years</option>
     <option value="2025">2025 (H)</option>
     <option value="2024">2024 (G)</option>
@@ -46,16 +46,16 @@
 </select>
 <button>Go</button>
 
-<br>
+<br><br>
 
 <!-- Search by Tag (show all cows or calves with that tag as their current OR previous/lost tag) -->
 <label for="search_tag">Search By Tag:</label>
-<input id="search_tag" type="text">
+<br><input id="search_tag" type="text">
 <!-- TODO Validate this input by capitalizing any letters, as they are in the db -->
 <button>Go</button>
 
 
-<!-- 2 main components: Cows and Calves Reports -->
+<!-- 3 main components: Cows, Calves, Bulls Reports -->
 
 <div id="cows-report">
 
@@ -69,8 +69,6 @@
                 <td>Tag</td>
                 <td>Birth Year</td>
                 <td>Color</td>
-                <td>Previous Calf Tag</td>
-                <td>Notes</td>
                 <td>Edit</td>
             </tr>
         </thead>
@@ -81,8 +79,6 @@
                 <td>P1</td>
                 <td>2025</td>
                 <td>Black</td>
-                <td>B10</td>
-                <td class="text_shorten">white around legs</td>
                 <td><button><a href="update.html">➤</a></button></td>
             </tr>
 
@@ -90,8 +86,6 @@
                 <td>A3</td>
                 <td>2025</td>
                 <td>Red</td>
-                <td>C5</td>
-                <td></td>
                 <td><button><a href="update.html">➤</a></button></td>
             </tr>
 
@@ -114,8 +108,6 @@
                 <td>Birth Date</td>
                 <td>Sex</td>
                 <td>Color</td>
-                <td>Notes</td>
-                <td>Keep?</td>
                 <td>Edit</td>
             </tr>
         </thead>
@@ -127,8 +119,7 @@
                 <td>01/10/2025</td>
                 <td>Bull</td>
                 <td>Black</td>
-                <td>small calf</td>
-                <td>✔</td> 
+                <!-- <td>✔</td>  -->
                 <!-- Checkmark: alt key + 0252 -->
                 <td><button><a href="update.html">➤</a></button></td>
             </tr>
@@ -138,8 +129,47 @@
                 <td>01/12/2025</td>
                 <td>Heifer</td>
                 <td>Red</td>
+                <td><button><a href="update.html">➤</a></button></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+<div id="bulls-report">
+
+    <p>Bulls</p>
+    <button><a href="addcalf.html">+ Add New</a></button>
+
+    <table id="bull-report">
+        <!-- Top row displaying names of fields -->
+        <thead>
+            <tr class="bold">
+                <td>Tag</td>
+                <td>2nd Tag</td>
+                <!-- <td>2nd Brand</td> -->
+                <td>Birth Year</td>
+                <td>Color</td>
+                <td>Edit</td>
+            </tr>
+        </thead>
+
+        <!-- Bulls Data -->
+        <tbody>
+            <tr>
+                <td>P1</td>
                 <td></td>
+                <td>2025</td>
+                <td>Black</td>
+                <td><button><a href="update.html">➤</a></button></td>
+            </tr>
+
+            <tr>
+                <td>A3</td>
                 <td></td>
+                <td>2025</td>
+                <td>Red</td>
                 <td><button><a href="update.html">➤</a></button></td>
             </tr>
 

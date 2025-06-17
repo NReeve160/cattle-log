@@ -28,22 +28,22 @@
 
     <form action="reports.html">
         <!-- Tag -->
-        Tag: <input type="text" value="A3"><br>
+        Tag: <br><input type="text" value="A3"><br>
         <!-- Birth Date -->
-        Birth Date: <input type="text" value="01/12/2025"><br>
+        Birth Date: <br><input type="text" value="01/12/2025"><br>
         
         <!-- Calf's Sex -->
         <label for="calf_sex">Sex:</label>
-        <select id="calf_sex" name="calf_sex">
+        <br><select id="calf_sex" name="calf_sex">
+            <option value="unknown">Unknown</option>
             <option value="heifer">Heifer</option>
             <option value="bull">Bull</option>
-            <option value="unknown">Unknown</option>
         </select>
         <br>
         
         <!-- Color -->
         <label for="color">Color:</label>
-        <select id="color" name="color">
+        <br><select id="color" name="color">
             <option value="black">Black</option>
             <option value="brown">Brown</option>
             <option value="bwf">Black White Face</option>
@@ -54,19 +54,19 @@
         <br>
        
         <!-- Notes -->
-        Notes: <input type="text" value=""><br>
+        Notes: <br><input type="text" value=""><br>
         <!-- Keep? -->
         Keep Calf? <input type="checkbox"><br>
         <!-- Mother (tag) -->
-        Mother Cow Tag: <input type="text" value="B10"><br>
+        Mother Cow Tag: <br><input type="text" value="B10"><br>
         <!-- (optional) Previous Tag -->
-        Previous Tag: <input type="text" value="None"><br>
+        Previous Tag: <br><input type="text" value="None"><br>
 
         <!-- (optional) Vet, shots, sale, death events -->
-        Vet Visits: <input type="text" value="None" readonly><button><a href="reports.html">+ Add New</a></button><br>
-        Shots Given: <input type="text" value="None" readonly><button><a href="reports.html">+ Add New</a></button><br>
-        Sold Calf: <input type="text" value="N/A" readonly><button><a href="reports.html">+ Add New</a></button><br>
-        Calf Died: <input type="text" value="N/A" readonly><button><a href="reports.html">+ Add New</a></button><br>
+        Vet Visits: <br><input type="text" value="None" readonly><button><a href="reports.html">+ Add</a></button><br>
+        Shots Given: <br><input type="text" value="None" readonly><button><a href="reports.html">+ Add</a></button><br>
+        Sold Calf: <br><input type="text" value="N/A" readonly><button><a href="reports.html">+ Add</a></button><br>
+        Calf Died: <br><input type="text" value="N/A" readonly><button><a href="reports.html">+ Add</a></button><br>
 
         <button type="submit">SAVE</button>
     </form>
