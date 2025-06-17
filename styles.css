@@ -1,6 +1,7 @@
 * { 
     /* Make almost everything Quicksand font */
     font-family: "Quicksand", sans-serif;
+
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -8,7 +9,6 @@
 }
 
 div {
-    margin: auto;
     padding: 30px;
 }
 
@@ -79,12 +79,26 @@ td {
 }
 
 /***Cow Report Table***/
+#cows-report {
+    display: block;
+    width: 350px;
+    margin: auto;
+}
 
 
 /***Calf Report Table***/
+#calves-report {
+    display: block;
+    width: 350px;
+    margin: auto;
+}
 
-
-
+/***Bulls Report Table***/
+#bulls-report {
+    display: block;
+    width: 350px;
+    margin: auto;
+}
 
 
 
