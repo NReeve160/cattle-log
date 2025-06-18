@@ -100,6 +100,12 @@ td {
     margin: auto;
 }
 
+/* Add pages */
+
+.small-component {
+    background-color: #f1efe7;
+    max-width: 350px;
+}
 
 
 

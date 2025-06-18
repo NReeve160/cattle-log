@@ -1,0 +1,61 @@
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+
+<!-- CSS Styles -->
+<link rel="stylesheet" href="styles.css">
+
+<header>
+  <!-- Logo -->
+  <img id="logo-nav" src="cattlelog.png" alt="cattlelog management system logo">
+  <nav>
+  <!-- Links -->
+      <a href="home.html">Home</a>
+      <a href="reports.html">Reports</a>
+      <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<!-- Title -->
+<h1 class="title">Add Cow</h1>
+
+<!-- Add a Cow Component -->
+
+<div id="add-cow-component">
+
+    <p>New Cow</p>
+
+    <form action="reports.html">
+        <!-- Tag -->
+        Tag: <br><input type="text"><br>
+        <!-- Birth Year -->
+        Birth Year: <br><input type="text" placeholder="YYYY"><br>
+        
+        <!-- Color -->
+        <label for="color">Color:</label>
+        <br><select id="color" name="color">
+            <option value="black">Black</option>
+            <option value="brown">Brown</option>
+            <option value="bwf">Black White Face</option>
+            <option value="brockle">Brockle</option>
+            <option value="red">Red</option>
+            <option value="gray">Gray</option>
+        </select>
+        <br>
+       
+        <!-- Notes -->
+        Notes: <br><input type="text" value=""><br>
+
+        <!-- (optional) Previous Tag -->
+        Previous Tag: <br><input type="text"><br>
+
+        <!-- (optional) Vet, shots, sale, death events -->
+        Vet Visits: <br><input type="text" value="None" readonly><button><a href="reports.html">+ Add</a></button><br>
+        Shots Given: <br><input type="text" value="None" readonly><button><a href="reports.html">+ Add</a></button><br>
+        Sold Cow: <br><input type="text" value="N/A" readonly><button><a href="reports.html">+ Add</a></button><br>
+        Cow Died: <br><input type="text" value="N/A" readonly><button><a href="reports.html">+ Add</a></button><br>
+
+        <button type="submit">SAVE</button>
+    </form>
+</div>
