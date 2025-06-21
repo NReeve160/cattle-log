@@ -1,0 +1,88 @@
+* { 
+  /* Make almost everything Quicksand font */
+  font-family: "Quicksand", sans-serif;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11pt;
+}
+
+
+/***Main Navigation***/
+
+img {
+  max-width: 200px;
+  margin: auto;
+  display: block;
+}
+
+nav {
+  background-color:#f1efe7;
+  padding: 30px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/***Home page***/
+
+
+/***Reports page***/
+
+/***All Report Tables***/
+
+td {
+  border: 1px black solid;
+}
+
+/* TODO Expand this to include all columns of view-only tables on reports page.
+  Width depending on screen size.*/
+.text_shorten {
+  max-width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/***Cow Report Table***/
+#cows-report {
+  display: block;
+  width: 350px;
+  margin: auto;
+}
+
+/***Calf Report Table***/
+#calves-report {
+  display: block;
+  width: 350px;
+  margin: auto;
+}
+
+/***Bulls Report Table***/
+#bulls-report {
+  display: block;
+  width: 350px;
+  margin: auto;
+}
+
+
+
+@media (min-width: 600px) {
+
+  * {
+      font-size: 14pt;
+  }
+
+  .title {
+      font-size: 20pt;
+  }
+}
