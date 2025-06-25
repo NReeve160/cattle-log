@@ -31,14 +31,9 @@ a:hover {
   text-decoration: underline;
 }
 
-
-
-/***Home page***/
-
-
-/***Reports page***/
-
-/***All Report Tables***/
+div {
+  border: 1px black solid;
+}
 
 td {
   border: 1px black solid;
@@ -53,26 +48,12 @@ td {
   text-overflow: ellipsis;
 }
 
-/***Cow Report Table***/
-#cows-report {
+/***Report Tables***/
+/* #cows-report, #bull-report, #calf-report  {
   display: block;
   width: 350px;
   margin: auto;
-}
-
-/***Calf Report Table***/
-#calves-report {
-  display: block;
-  width: 350px;
-  margin: auto;
-}
-
-/***Bulls Report Table***/
-#bulls-report {
-  display: block;
-  width: 350px;
-  margin: auto;
-}
+} */
 
 
 
