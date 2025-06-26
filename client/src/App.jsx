@@ -2,6 +2,9 @@ import { useState } from 'react'
 import './index.css'
 import Header from './components/Header.jsx';
 
+import Login from './components/Login.jsx';
+import CreateAccount from './components/CreateAccount.jsx';
+
 import CowReport from './components/CowReport.jsx';
 import CalfReport from './components/CalfReport.jsx';
 import BullReport from './components/BullReport.jsx';
@@ -20,6 +23,9 @@ function App() {
   return (
     <>
     <Header />
+
+    <Login />
+    <CreateAccount />
 
     {/* Reports (3 tables displaying all records in db) */}
     <CowReport />
