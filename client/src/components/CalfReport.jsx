@@ -8,7 +8,7 @@ function CalfReport() {
     <div id="calf-report">
     <Sort />
 
-    <p>Calves</p>
+    <h1 class="title">Calves</h1>
     <button><a href="addcalf.html">+ Add New</a></button>
 
     <table>

@@ -5,7 +5,7 @@ function UpdateBull() {
     <>
     <div id="update-bull-component">
 
-    <p>Update Bull</p>
+    <h1 class="title">Update Bull</h1>
 
     <form action="reports.html">
         {/* <!-- Tag --> */}

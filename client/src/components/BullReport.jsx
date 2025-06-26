@@ -7,7 +7,7 @@ function BullReport() {
     <div id="bull-report">
     <Sort />
 
-    <p>Bulls</p>
+    <h1 class="title">Bulls</h1>
     <button><a href="addbull.html">+ Add New</a></button>
 
     <table>

@@ -5,7 +5,7 @@ function AddCalf() {
     <>
     <div id="add-calf-component">
 
-    <p>New Calf</p>
+    <h1 class="title">New Calf</h1>
 
     <form action="reports.html">
         {/* <!-- Tag --> */}

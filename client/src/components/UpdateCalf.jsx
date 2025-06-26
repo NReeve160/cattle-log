@@ -5,7 +5,7 @@ function UpdateCalf() {
     <>
     <div id="update-component">
 
-  <p>Update Calf</p>
+  <h1 class="title">Update Calf</h1>
 
   <form action="reports.html">
       {/* <!-- Tag --> */}

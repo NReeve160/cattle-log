@@ -8,7 +8,7 @@ function CowReport() {
     <div id="cows-report">
     <Sort />
 
-    <p>Cows</p>
+    <h1 class="title">Cows</h1>
     <button><a href="addcow.html">+ Add New</a></button>
 
     <table>

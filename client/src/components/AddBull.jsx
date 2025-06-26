@@ -5,7 +5,7 @@ function AddBull() {
     <>
     <div id="add-bull-component">
 
-    <p>New Bull</p>
+    <h1 class="title">New Bull</h1>
 
     <form action="reports.html">
         {/* <!-- Tag --> */}

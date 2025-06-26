@@ -5,7 +5,7 @@ function AddCow() {
     <>
     <div id="add-cow-component">
 
-    <p>New Cow</p>
+    <h1 class="title">New Cow</h1>
 
     <form action="reports.html">
         {/* <!-- Tag --> */}
