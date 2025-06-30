@@ -1,0 +1,24 @@
+
+HTML, user facing validation
+**Apply to all fields of each type**
+
+Tag (all types): 
+maxLength={5}
+
+Brand: 
+maxLength={5}
+
+Birth Year (Cow, Bull): 
+type="number" min="2000" max="2026" 
+
+Birth Date (Calves): 
+type="date" min="2000" max="2026" 
+
+Sex, Color: 
+enum (HTML select element) 
+
+Notes: 
+text, maxLength={1500}
+
+Purchased From: 
+text, maxLength={200}

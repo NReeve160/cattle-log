@@ -4,6 +4,7 @@ import Sort from './Sort.jsx';
 function BullReport() {
   return (
     <>
+    
     <div id="bull-report">
     <Sort />
 

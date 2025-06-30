@@ -1,27 +1,37 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 function AddBull() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log('Form submitted');
+    // Navigate to reports page after successful submission
+    navigate('/reports');
+  };
+
   return (
-    <>
     <div id="add-bull-component">
 
-    <h1 class="title">New Bull</h1>
+    <h1 className="title">New Bull</h1>
 
-    <form action="reports.html">
+    <form onSubmit={handleSubmit}>
         {/* <!-- Tag --> */}
         Tag: <input type="text"/>
 
         {/* <!-- Trich Tag --> */}
-        Trich Tag: <input type="text"/>
+        <br />Trich Tag: <input type="text"/>
 
         {/* <!-- Brand --> */}
-        Brand: <input type="text"/>
+        <br />Brand: <input type="text"/>
 
         {/* <!-- Birth Year --> */}
-        Birth Year: <input type="text" placeholder="YYYY"/>
+        <br />Birth Year: <input type="number" name="year" min="2000" max="2026" step="1" />
         
         {/* <!-- Color --> */}
-        <label for="color">Color:</label>
+        <br /><label htmlFor="color">Color:</label>
         <select id="color" name="color">
             <option value="black">Black</option>
             <option value="brown">Brown</option>
@@ -32,13 +42,14 @@ function AddBull() {
         </select>
         
         {/* <!-- Notes --> */}
-        Notes: <input type="text" value=""/>
+        <br />Notes: <input type="text" />
         
-        <button type="submit">SAVE</button>
+        <br /><br /><button type="submit">SAVE</button>
     </form>
+    <button><Link to="/reports">Go Back</Link></button>
+    
     </div>
     
-    </>
   );
 }
 

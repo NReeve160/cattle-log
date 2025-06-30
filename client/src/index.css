@@ -1,7 +1,6 @@
 * { 
-  /* Make almost everything Quicksand font */
+  /* Font styles*/
   font-family: "Quicksand", sans-serif;
-
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -9,7 +8,7 @@
 }
 
 
-/***Main Navigation***/
+/***Header & nav ***/
 
 img {
   max-width: 200px;
@@ -22,6 +21,8 @@ nav {
   padding: 30px;
 }
 
+/* General styles */
+
 a {
   color: black;
   text-decoration: none;
@@ -31,8 +32,24 @@ a:hover {
   text-decoration: underline;
 }
 
-div {
+/* div {
   border: 1px black solid;
+} */
+
+input {
+  max-width: 100px;
+}
+
+.title {
+  font-size: 14pt;
+}
+
+/***Width of tables***/
+
+#cows-report, #bull-report, #calf-report, #login-component, #createaccount-component,#add-cow-component, #add-calf-component, #add-bull-component, #update-cow-component, #update-calf-component, #update-bull-component  {
+  display: block;
+  width: 290px;
+  margin: auto;
 }
 
 td {
@@ -48,12 +65,6 @@ td {
   text-overflow: ellipsis;
 }
 
-/***Report Tables***/
-/* #cows-report, #bull-report, #calf-report  {
-  display: block;
-  width: 350px;
-  margin: auto;
-} */
 
 
 
@@ -66,4 +77,18 @@ td {
   .title {
       font-size: 20pt;
   }
+
+  input {
+    max-width: 150px;
+  }
+
+  /***Width of tables***/
+  #cows-report, #bull-report, #calf-report, #login-component, #createaccount-component,#add-cow-component, #add-calf-component, #add-bull-component, #update-cow-component, #update-calf-component, #update-bull-component  {
+    display: block;
+    width: 500px;
+    margin: auto;
+  }
+
+
+
 }

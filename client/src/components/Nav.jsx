@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
     <nav>
-        <ul><a href="#"><img src="../src/cattlelog.png" alt="cattlelog logo" /></a></ul>
-        <ul><a href="#">Home</a></ul>
-        <ul><a href="#">Reports</a></ul>
-        <ul><a href="#">Login</a></ul>
+        <ul><Link to="/"><img src="../src/cattlelog.png" alt="cattlelog logo" /></Link></ul>
+        <ul><Link to="/">Home</Link></ul>
+        <ul><Link to="/reports">Reports</Link></ul>
+        <ul><Link to="/login">Login</Link></ul>
     </nav>
   );
 }

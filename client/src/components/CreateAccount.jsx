@@ -1,25 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CreateAccount() {
   return (
-    <>
-    <div>
+    <div id="createaccount-component">
 
-    <h1 class="title">Create Account</h1>
+    <h1 className="title">Create Account</h1>
 
-    <label for="username">Username:</label>
+    <label htmlFor="username">Username:</label>
     <input type="text" id="username" />
 
-    <label for="password">Password:</label>
+    <br /><label htmlFor="password">Password:</label>
     <input type="text" id="password" />
 
-    <label for="password2">Confirm Password:</label>
+    <br /><label htmlFor="password2">Confirm Password:</label>
     <input type="text" id="password2" />
 
-    <button><a href="home.html">CREATE ACCOUNT</a></button>
+    <br /><br /><button><Link to="/">CREATE ACCOUNT</Link></button>
 
     </div>
-    </>
   );
 }
 

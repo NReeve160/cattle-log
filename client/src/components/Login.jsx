@@ -1,22 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
-    <>
-    <div>
+    <div id="login-component">
 
-    <h1 class="title">LOGIN</h1>
+    <h1 className="title">LOGIN</h1>
 
-    <label for="username">Username:</label>
+    <label htmlFor="username">Username:</label>
     <input type="text" id="username" />
 
-    <label for="password">Password:</label>
+    <br /><label htmlFor="password">Password:</label>
     <input type="text" id="password" />
 
-    <button><a href="account.html">LOG IN</a></button>
+    <br /><br /><button><Link to="/">LOG IN</Link></button>
     
     </div>
-    </>
   );
 }
 

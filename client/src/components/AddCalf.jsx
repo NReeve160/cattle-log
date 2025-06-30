@@ -2,19 +2,18 @@ import React from 'react';
 
 function AddCalf() {
   return (
-    <>
     <div id="add-calf-component">
 
     <h1 class="title">New Calf</h1>
 
     <form action="reports.html">
         {/* <!-- Tag --> */}
-        Tag: <input type="text"/>
+        Tag: <input type="text" maxLength={5}/>
         {/* <!-- Birth Date --> */}
-        Birth Date: <input type="text" placeholder="MM/DD/YYYY"/>
+        <br />Birth Date: <input type="date" min="2000" max="2026" />
 
         {/* Sex */}
-        <label htmlFor="sex">Sex:</label>
+        <br /><label htmlFor="sex">Sex:</label>
         <select id="sex" name="sex">
             <option value="unknown">Unknown</option>
             <option value="bull">Bull</option>
@@ -22,7 +21,7 @@ function AddCalf() {
         </select>
         
         {/* <!-- Color --> */}
-        <label for="color">Color:</label>
+        <br /><label for="color">Color:</label>
         <select id="color" name="color">
             <option value="black">Black</option>
             <option value="brown">Brown</option>
@@ -33,13 +32,14 @@ function AddCalf() {
         </select>
         
         {/* <!-- Notes --> */}
-        Notes: <input type="text" value=""/>
+        <br />Notes: <input type="text" maxLength={1500}/>
 
-        <button type="submit">SAVE</button>
+        <br /><br /><button type="submit">SAVE</button>
     </form>
+
+    <button>Go Back</button>
     </div>
     
-    </>
   );
 }
 

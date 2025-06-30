@@ -2,7 +2,8 @@ import React from 'react';
 
 function Sort() {
   return (
-    <>
+    <div id="sort-component">
+
       {/* Sort by Year (show data for cows/calves born in that year) */}
         <label htmlFor="sort_year">Sort By Year:</label>
         <select id="sort_year" name="sort_year">
@@ -28,11 +29,12 @@ function Sort() {
         <button>Go</button>
 
         {/* Search by Tag (show all cows or calves with that tag as their current OR previous/lost tag) */}
-        <label htmlFor="search_tag">Search By Tag:</label>
+        <br /><br /><label htmlFor="search_tag">Search By Tag:</label>
         <input id="search_tag" type="text" />
         {/* <!-- TODO Validate this input by capitalizing any letters, as they are in the db --> */}
         <button>Go</button>
-    </>
+      
+      </div>
   );
 }
 
