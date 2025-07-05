@@ -43,10 +43,10 @@ function UpdateCow() {
         <br />Previous Tag: <input type="text" maxLength={5}/>
 
         {/* <!-- (optional) Vet, shots, sale, death events --> */}
-        <br />Vet Visits: <input type="text" readonly/><button><a href="reports.html">+ Add</a></button>
-        <br />Shots Given: <input type="text" readonly/><button><a href="reports.html">+ Add</a></button>
-        <br />Sold Cow: <input type="text" readonly/><button><a href="reports.html">+ Add</a></button>
-        <br />Cow Died: <input type="text" readonly/><button><a href="reports.html">+ Add</a></button>
+        <br />Vet Visits: <input type="text" readonly/><button><Link to="/vet-event">+ Add</Link></button>
+        <br />Shots Given: <input type="text" readonly/><button><Link to="/shot-event">+ Add</Link></button>
+        <br />Sold Cow: <input type="text" readonly/><button><Link to="/sale-event">+ Add</Link></button>
+        <br />Cow Died: <input type="text" readonly/><button><Link to="/death-event">+ Add</Link></button>
 
         <br /><br /><button type="submit"><Link to="/cow-report">SAVE</Link></button>
 

@@ -18,6 +18,11 @@ import UpdateCalf from './components/UpdateCalf.jsx';
 import UpdateBull from './components/UpdateBull.jsx';
 import UpdateCow from './components/UpdateCow.jsx';
 
+import VetEvent from './components/VetEvent.jsx';
+import ShotEvent from './components/ShotEvent.jsx';
+import SaleEvent from './components/SaleEvent.jsx';
+import DeathEvent from './components/DeathEvent.jsx';
+
 function App() {
   return (
     <>
@@ -52,6 +57,13 @@ function App() {
         <Route path="/update-cow" element={<UpdateCow />} />
         <Route path="/update-calf" element={<UpdateCalf />} />
         <Route path="/update-bull" element={<UpdateBull />} />
+
+        {/* other components (update data) */}
+        <Route path="/vet-event" element={<VetEvent />} />
+        <Route path="/shot-event" element={<ShotEvent />} />
+        <Route path="/sale-event" element={<SaleEvent />} />
+        <Route path="/death-event" element={<DeathEvent />} />
+
       </Routes>
     </>
   )

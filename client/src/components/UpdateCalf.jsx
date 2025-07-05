@@ -42,10 +42,10 @@ function UpdateCalf() {
       <br />Previous Tag: <input type="text" maxLength={5}/>
 
       {/* <!-- (optional) Vet, shots, sale, death events --> */}
-      <br />Vet Visits: <input type="text" readonly/><button><a href="reports.html">+ Add</a></button>
-      <br />Shots Given: <input type="text" readonly/><button><a href="reports.html">+ Add</a></button>
-      <br />Sold Calf: <input type="text" readonly/><button><a href="reports.html">+ Add</a></button>
-      <br />Calf Died: <input type="text" readonly/><button><a href="reports.html">+ Add</a></button>
+      <br />Vet Visits: <input type="text" readonly/><button><Link to="/vet-event">+ Add</Link></button>
+      <br />Shots Given: <input type="text" readonly/><button><Link to="/shot-event">+ Add</Link></button>
+      <br />Sold Calf: <input type="text" readonly/><button><Link to="/sale-event">+ Add</Link></button>
+      <br />Calf Died: <input type="text" readonly/><button><Link to="/death-event">+ Add</Link></button>
 
       {/* <!-- Weaning Date --> */}
       <br />Weaning Date: <input type="date"/>
