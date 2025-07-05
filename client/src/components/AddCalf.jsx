@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function AddCalf() {
   return (
     <div id="add-calf-component">
 
-    <h1 class="title">New Calf</h1>
+    <h1 className="title">New Calf</h1>
 
     <form action="reports.html">
         {/* <!-- Tag --> */}
@@ -21,7 +22,7 @@ function AddCalf() {
         </select>
         
         {/* <!-- Color --> */}
-        <br /><label for="color">Color:</label>
+        <br /><label htmlFor="color">Color:</label>
         <select id="color" name="color">
             <option value="black">Black</option>
             <option value="brown">Brown</option>
@@ -36,8 +37,8 @@ function AddCalf() {
 
         <br /><br /><button type="submit">SAVE</button>
     </form>
+    <button><Link to="/calf-report">View All</Link></button>
 
-    <button>Go Back</button>
     </div>
     
   );

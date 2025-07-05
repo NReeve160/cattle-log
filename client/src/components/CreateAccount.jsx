@@ -16,7 +16,7 @@ function CreateAccount() {
     <br /><label htmlFor="password2">Confirm Password:</label>
     <input type="text" id="password2" />
 
-    <br /><br /><button><Link to="/">CREATE ACCOUNT</Link></button>
+    <br /><br /><button><Link to="/login">CREATE ACCOUNT</Link></button>
 
     </div>
   );

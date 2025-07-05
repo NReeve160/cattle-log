@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function AddCow() {
   return (
     <div id="add-cow-component">
 
-    <h1 class="title">New Cow</h1>
+    <h1 className="title">New Cow</h1>
 
     <form action="reports.html">
         {/* <!-- Tag --> */}
@@ -13,7 +14,7 @@ function AddCow() {
         <br />Birth Year: <input type="number" name="year" min="2000" max="2026" step="1" />
         
         {/* <!-- Color --> */}
-        <br /><label for="color">Color:</label>
+        <br /><label htmlFor="color">Color:</label>
         <select id="color" name="color">
             <option value="black">Black</option>
             <option value="brown">Brown</option>
@@ -42,8 +43,8 @@ function AddCow() {
 
         <br /><br /><button type="submit">SAVE</button>
     </form>
+    <button><Link to="/cow-report">View All</Link></button>
 
-    <button>Go Back</button>
     </div>
   
   );

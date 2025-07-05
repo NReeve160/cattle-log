@@ -2,6 +2,8 @@
 HTML, user facing validation
 **Apply to all fields of each type**
 
+*DONE
+
 Tag (all types): 
 maxLength={5}
 

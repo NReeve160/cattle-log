@@ -65,7 +65,13 @@ td {
   text-overflow: ellipsis;
 }
 
-
+.action-button {
+  display: block;
+  padding: 10px;
+  background-color: #f1efe7;
+  text-decoration: none;
+  max-width: 150px;
+}
 
 
 @media (min-width: 600px) {

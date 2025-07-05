@@ -1,5 +1,6 @@
 import React from 'react';
 import Sort from './Sort.jsx';
+import { Link } from 'react-router-dom';
 
 function BullReport() {
   return (
@@ -9,7 +10,7 @@ function BullReport() {
     <Sort />
 
     <h1 class="title">Bulls</h1>
-    <button><a href="addbull.html">+ Add New</a></button>
+    <button><Link to="/add-bull">+ Add New</Link></button>
 
     <table>
         {/* <!-- Top row displaying names of fields --> */}

@@ -25,6 +25,7 @@ function App() {
       <Routes>
         {/* Home/Default route */}
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         
         {/* Authentication routes */}
         <Route path="/login" element={<Login />} />

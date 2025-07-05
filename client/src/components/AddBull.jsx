@@ -46,7 +46,7 @@ function AddBull() {
         
         <br /><br /><button type="submit">SAVE</button>
     </form>
-    <button><Link to="/reports">Go Back</Link></button>
+    <button><Link to="/bull-report">View All</Link></button>
     
     </div>
     

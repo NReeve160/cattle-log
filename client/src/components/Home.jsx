@@ -4,17 +4,16 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className="home-component">
-      <h1 className="title">Welcome to Cattlelog</h1>
-      <p>Your comprehensive cattle management system</p>
+      <h1 className="title">Cattlelog Management System</h1>
       
-      <div className="home-actions">
-        <h2>Quick Actions</h2>
-        <div className="action-buttons">
-          <Link to="/reports" className="action-button">View Reports</Link>
-          <Link to="/add-cow" className="action-button">Add New Cow</Link>
-          <Link to="/add-calf" className="action-button">Add New Calf</Link>
-          <Link to="/add-bull" className="action-button">Add New Bull</Link>
-        </div>
+      <div className="action-buttons">
+        <br /><Link to="/add-calf" className="action-button">Add New Calf</Link>
+        <br /><Link to="/add-cow" className="action-button">Add New Cow</Link>
+        <br /><Link to="/add-bull" className="action-button">Add New Bull</Link>
+        <br /><br />
+        <br /><Link to="/cow-report" className="action-button">Cow Report</Link>
+        <br /><Link to="/calf-report" className="action-button">Calf Report</Link>
+        <br /><Link to="/bull-report" className="action-button">Bull Report</Link>
       </div>
     </div>
   );

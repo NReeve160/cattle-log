@@ -1,5 +1,6 @@
 import React from 'react';
 import Sort from './Sort.jsx';
+import { Link } from 'react-router-dom';
 
 function CalfReport() {
   return (
@@ -9,7 +10,7 @@ function CalfReport() {
     <Sort />
 
     <h1 class="title">Calves</h1>
-    <button><a href="addcalf.html">+ Add New</a></button>
+    <button><Link to="/add-calf">+ Add New</Link></button>
 
     <table>
         {/* <!-- Top row displaying names of fields --> */}
