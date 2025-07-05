@@ -35,7 +35,7 @@ function AddCalf() {
         {/* <!-- Notes --> */}
         <br />Notes: <input type="text" maxLength={1500}/>
 
-        <br /><br /><button type="submit">SAVE</button>
+        <br /><br /><button type="submit"><Link to="/calf-report">SAVE</Link></button>
     </form>
     <button><Link to="/calf-report">View All</Link></button>
 

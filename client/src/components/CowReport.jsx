@@ -9,7 +9,7 @@ function CowReport() {
     <div id="cows-report">
     <Sort />
 
-    <h1 class="title">Cows</h1>
+    <h1 className="title">Cows</h1>
     <button><Link to="/add-cow">+ Add New</Link></button>
 
     <table>
@@ -29,14 +29,14 @@ function CowReport() {
                 <td>P1</td>
                 <td>2025</td>
                 <td>Black</td>
-                <td><button><a href="update.html">➤</a></button></td>
+                <td><button><Link to="/update-cow">➤</Link></button></td>
             </tr>
 
             <tr>
                 <td>A3</td>
                 <td>2025</td>
                 <td>Red</td>
-                <td><button><a href="update.html">➤</a></button></td>
+                <td><button><Link to="/update-cow">➤</Link></button></td>
             </tr>
 
 

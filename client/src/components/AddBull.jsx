@@ -44,7 +44,7 @@ function AddBull() {
         {/* <!-- Notes --> */}
         <br />Notes: <input type="text" />
         
-        <br /><br /><button type="submit">SAVE</button>
+        <br /><br /><button type="submit"><Link to="/bull-report">SAVE</Link></button>
     </form>
     <button><Link to="/bull-report">View All</Link></button>
     

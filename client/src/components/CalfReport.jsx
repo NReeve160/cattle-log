@@ -31,7 +31,7 @@ function CalfReport() {
                 <td>01/10/2025</td>
                 <td>Bull</td>
                 <td>Black</td>
-                <td><button><a href="update.html">➤</a></button></td>
+                <td><button><Link to="/update-calf">➤</Link></button></td>
             </tr>
 
             <tr>
@@ -39,7 +39,7 @@ function CalfReport() {
                 <td>02/03/2025</td>
                 <td>Heifer</td>
                 <td>Red</td>
-                <td><button><a href="update.html">➤</a></button></td>
+                <td><button><Link to="/update-calf">➤</Link></button></td>
             </tr>
 
 

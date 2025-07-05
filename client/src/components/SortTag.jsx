@@ -1,17 +1,20 @@
 import React from 'react';
 
-function SortTag() {
-  return (
-    <div id="sort-tag">
+const SortTag = ({ value, onChange }) => {
+    return (
+        <div id="sort-tag">
 
-        {/* Search by Tag (show all cows or calves with that tag as their current OR previous/lost tag) */}
-        <br /><br /><label htmlFor="search_tag">Search By Tag:</label>
-        <input id="search_tag" type="text" />
-        {/* <!-- TODO Validate this input by capitalizing any letters, as they are in the db --> */}
-        <button>Go</button>
+        <h2>Search By Tag: </h2>
+      <input type="text" placeholder="A1" value={value} onChange={onChange}
+        style={{
+          padding: '5px 10px',
+          border: '1px solid black',
+          width: '50px'
+        }}
+      />
       
       </div>
-  );
-}
+    );
+  };
 
 export default SortTag;

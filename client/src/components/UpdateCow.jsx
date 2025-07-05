@@ -48,12 +48,12 @@ function UpdateCow() {
         <br />Sold Cow: <input type="text" readonly/><button><a href="reports.html">+ Add</a></button>
         <br />Cow Died: <input type="text" readonly/><button><a href="reports.html">+ Add</a></button>
 
-        <br /><br /><button type="submit">SAVE</button>
+        <br /><br /><button type="submit"><Link to="/cow-report">SAVE</Link></button>
 
-        <br /><button>DELETE</button>
+        <br /><button><Link to="/cow-report">DELETE</Link></button>
     </form>
 
-    <button>Go Back</button>
+    <button><Link to="/cow-report">View All</Link></button>
     </div>
     
   );

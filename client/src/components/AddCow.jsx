@@ -41,7 +41,7 @@ function AddCow() {
         <ul><button>2020</button></ul>
         <ul><button>2021</button></ul>
 
-        <br /><br /><button type="submit">SAVE</button>
+        <br /><br /><button type="submit"><Link to="/cow-report">SAVE</Link></button>
     </form>
     <button><Link to="/cow-report">View All</Link></button>
 

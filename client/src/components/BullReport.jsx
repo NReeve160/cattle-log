@@ -33,7 +33,7 @@ function BullReport() {
                 <td>JF</td>
                 <td>2020</td>
                 <td>Black</td>
-                <td><button><a href="update.html">➤</a></button></td>
+                <td><button><Link to="/update-bull">➤</Link></button></td>
             </tr>
 
             <tr>
@@ -42,7 +42,7 @@ function BullReport() {
                 <td>-B</td>
                 <td>2019</td>
                 <td>Black</td>
-                <td><button><a href="update.html">➤</a></button></td>
+                <td><button><Link to="/update-bull">➤</Link></button></td>
             </tr>
 
 

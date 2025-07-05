@@ -50,13 +50,13 @@ function UpdateCalf() {
       {/* <!-- Weaning Date --> */}
       <br />Weaning Date: <input type="date"/>
       
-      <br /><br /><button type="submit">SAVE</button>
+      <br /><br /><button type="submit"><Link to="/calf-report">SAVE</Link></button>
 
-      <br /><button>DELETE</button>
+      <br /><button><Link to="/calf-report">DELETE</Link></button>
       
   </form>
 
-  <button>Go Back</button>
+  <button><Link to="/calf-report">View All</Link></button>
   </div>
     
   );

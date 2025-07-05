@@ -50,12 +50,12 @@ function UpdateBull() {
 
         <br />Date of Purchase: <input type="date" />
 
-        <br /><br /><button type="submit">SAVE</button>
+        <br /><br /><button type="submit"><Link to="/bull-report">SAVE</Link></button>
 
-        <br /><button>DELETE</button>
+        <br /><button><Link to="/bull-report">DELETE</Link></button>
     </form>
 
-    <button>Go Back</button>
+    <button><Link to="/bull-report">View All</Link></button>
     </div>
     
   );
