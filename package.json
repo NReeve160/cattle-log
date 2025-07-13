@@ -2,20 +2,24 @@
   "name": "cattle-log",
   "version": "1.0.0",
   "description": "BYUI Capstone Project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node server.js",
     "nodemon": "npx nodemon index.js"
   },
   "author": "Nathan Reeve & Brooklyn Sowards",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "body-parser": "^2.2.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
+    "dotenv": "^16.6.1",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoos": "^0.0.1-security",
+    "mongoose": "^8.16.3",
     "nstall": "^0.2.0",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0"
