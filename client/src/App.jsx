@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css'
 import Header from './components/Header.jsx';
 import Home from './components/Home.jsx';
@@ -44,7 +44,7 @@ function App() {
             <BullReport />
           </div>
         } />
-        <Route path="/cow-report" element={<CowReport />} />
+        <Route path="/CowReport" element={<CowReport />} />
         <Route path="/calf-report" element={<CalfReport />} />
         <Route path="/bull-report" element={<BullReport />} />
         

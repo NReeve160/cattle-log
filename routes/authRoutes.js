@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/user');
+const User = require('../models/User');
 const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
 
 // Environment secret key (set this in .env)
 const JWT_SECRET = process.env.JWT_SECRET;
@@ -19,19 +20,31 @@ router.post('/register', async (req, res) => {
 });
 
 // Login
-router.post('/login', async (req, res) => {
+router.post('/login', (req, res) => {
   const { username, password } = req.body;
+
+  // Replace with your real login logic or DB check
+  if (username === 'test@example.com' && password === '1234') {
+    return res.json({ token: 'fake-jwt-token' });
+  }
+
+  res.status(401).json({ error: 'Invalid credentials' });
+});
+
+router.post('/register-test', async (req, res) => {
   try {
-    const user = await User.findOne({ username });
-    if (!user) return res.status(401).json({ error: 'Invalid username or password' });
+    const username = 'test@email.com';
+    const password = await bcrypt.hash('123', 10);
 
-    const isMatch = await user.comparePassword(password);
-    if (!isMatch) return res.status(401).json({ error: 'Invalid username or password' });
+    const existing = await User.findOne({ username });
+    if (existing) {
+      return res.json({ message: 'User already exists' });
+    }
 
-    // Create JWT
-    const token = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: '1d' });
+    const user = new User({ username, password });
+    await user.save();
 
-    res.json({ message: 'Login successful', token });
+    res.json({ message: 'Test user created' });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

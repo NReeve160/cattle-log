@@ -13,8 +13,6 @@ app.use(express.json());
 
 // ✅ THEN serve static files
 app.use('/OLD-HTML', express.static(path.join(__dirname, 'OLD-HTML')));
-app.use('/auth', express.static(path.join(__dirname, 'auth')));
-app.use('/auth', express.static(path.join(__dirname, 'auth')));
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
@@ -27,6 +25,11 @@ mongoose.connect(process.env.MONGO_URI, {
 const authRoutes = require('./routes/authRoutes');
 const cowRoutes = require('./routes/cowRoutes');
 app.use('/api/auth', authRoutes);
+
+app.get('/api/cows/test', (req, res) => {
+  res.json({ message: 'Test route is working!' });
+});
+
 app.use('/api/cows', cowRoutes);
 
 // Start server
@@ -34,3 +37,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
