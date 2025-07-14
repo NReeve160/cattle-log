@@ -27,13 +27,11 @@
 <!-- Title -->
 <h1 class="title">LOGIN</h1>
 
-<label for="username">Username:</label>
-<br><input type="text" id="username">
-<br><br>
+<form id="loginForm">
+  <input type="email" name="username" required>
+  <input type="password" name="password" required>
+  <button type="submit">Login</button>
+</form>
 
-<label for="password">Password:</label>
-<br><input type="text" id="password">
-
-<br><button><a href="account.html">LOG IN</a></button>
-
+<script src="/auth/login.js"></script>
 </html>
